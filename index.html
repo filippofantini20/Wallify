@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Foto di Filippo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5; color: #333;
+      text-align: center;
+    }
+    header {
+      background: #222; color: white;
+      padding: 20px;
+    }
+    h1 { margin: 0; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%; border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    a.download {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: none;
+      color: white;
+      background: #0077ff;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Le Foto di Filippo</h1>
+    <p>Scarica i miei sfondi gratis!</p>
+  </header>
+
+  <section class="gallery">
+    <div>
+      <img src="immagini/sfondo1.jpg" alt="Sfondo 1">
+      <a class="download" href="immagini/sfondo1.jpg" download>Scarica</a>
+    </div>
+    <div>
+      <img src="immagini/sfondo2.jpg" alt="Sfondo 2">
+      <a class="download" href="immagini/sfondo2.jpg" download>Scarica</a>
+    </div>
+    <!-- Aggiungi altre foto qui -->
+  </section>
+</body>
+</html>
